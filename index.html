@@ -1934,7 +1934,10 @@
      JAVASCRIPT
 ============================================================= -->
 
-
+<audio id="chhathMusic" loop>
+    <source src="./chhath.mp3" type="audio/mpeg">
+</audio>
+    
 <script>
 const chhathPlayer = document.getElementById("chhathMusic");
 const chhathButton = document.getElementById("musicButton");
@@ -2318,24 +2321,6 @@ basket.appendChild(item);
        MUSIC UI
        ========================================================= */
 
-    const musicButton =
-        document.getElementById("musicButton");
-
-    const musicText =
-        document.getElementById("musicText");
-
-    let soundOn = true;
-
-
-    musicButton.addEventListener("click", () => {
-
-        soundOn = !soundOn;
-
-        musicText.textContent =
-            soundOn ? "Sound on" : "Sound off";
-
-    });
-
 
 
     /* =========================================================
@@ -2391,9 +2376,7 @@ basket.appendChild(item);
 
 </script>
 <!-- AUDIO -->
-    <audio id="chhathMusic" loop>
-    <source src="./chhath.mp3" type="audio/mpeg">
-</audio>
+
 </body>
 </html>
 ```
